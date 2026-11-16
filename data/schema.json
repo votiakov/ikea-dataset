@@ -1,0 +1,186 @@
+{
+ "products": {
+  "fields": [
+   {
+    "name": "item_no",
+    "type": "string",
+    "description": "IKEA article number (8 digits). The same number is the same article in every country."
+   },
+   {
+    "name": "item_type",
+    "type": "string",
+    "description": "ART = single article; SPR = combination of several articles sold as one product."
+   },
+   {
+    "name": "parent_item_no",
+    "type": "string",
+    "description": "Article number of the product this row is a colour/size variant of (equals item_no for the main product)."
+   },
+   {
+    "name": "is_main_variant",
+    "type": "boolean",
+    "description": "True for the product's main variant, false for its other colour/size variants."
+   },
+   {
+    "name": "name",
+    "type": "string",
+    "description": "Product range name, e.g. KALLAX."
+   },
+   {
+    "name": "type_name",
+    "type": "string",
+    "description": "Product type, e.g. 'Shelving unit', in the country's language."
+   },
+   {
+    "name": "design",
+    "type": "string",
+    "description": "Colour / design text, e.g. 'white stained oak effect'."
+   },
+   {
+    "name": "measure",
+    "type": "string",
+    "description": "Main measurement as shown, e.g. '77x147 cm'."
+   },
+   {
+    "name": "option_colour",
+    "type": "string",
+    "description": "Colour option this variant represents among the product's variants."
+   },
+   {
+    "name": "option_size",
+    "type": "string",
+    "description": "Size option this variant represents among the product's variants."
+   },
+   {
+    "name": "variant_count",
+    "type": "integer",
+    "description": "Number of variants of the product (main variant included)."
+   },
+   {
+    "name": "product_url",
+    "type": "string",
+    "description": "Product page on the country's IKEA website."
+   },
+   {
+    "name": "country",
+    "type": "string",
+    "description": "ISO country code."
+   },
+   {
+    "name": "country_name",
+    "type": "string",
+    "description": "Country name."
+   },
+   {
+    "name": "language",
+    "type": "string",
+    "description": "Language of names, types and categories."
+   },
+   {
+    "name": "currency",
+    "type": "string",
+    "description": "ISO currency of the prices."
+   },
+   {
+    "name": "price",
+    "type": "number",
+    "description": "Current selling price in local currency."
+   },
+   {
+    "name": "original_price",
+    "type": "number",
+    "description": "Previous price when the price was lowered; empty otherwise."
+   },
+   {
+    "name": "discount_pct",
+    "type": "number",
+    "description": "1 - price / original_price, rounded to 4 decimals; 0 when not reduced."
+   },
+   {
+    "name": "price_tags",
+    "type": "list of strings",
+    "description": "Price labels: NEW_PRODUCT, NEW_LOWER_PRICE, TIME_RESTRICTED_OFFER, FAMILY_PRICE (IKEA Family member price), DISCONTINUED_PRODUCT, LOWER_CURRENT_REGULAR_PRICE_IN_STORE, COMING_SOON. Every reduced price carries one of them."
+   },
+   {
+    "name": "price_valid_from",
+    "type": "date",
+    "description": "Start of the current price's validity, when published."
+   },
+   {
+    "name": "price_valid_to",
+    "type": "date",
+    "description": "End of the current price's validity, when published."
+   },
+   {
+    "name": "rating",
+    "type": "number",
+    "description": "Average customer rating (1-5)."
+   },
+   {
+    "name": "rating_count",
+    "type": "integer",
+    "description": "Number of customer ratings."
+   },
+   {
+    "name": "online_sellable",
+    "type": "boolean",
+    "description": "False when the article is sold in stores only."
+   },
+   {
+    "name": "last_chance",
+    "type": "boolean",
+    "description": "True when the article is being discontinued."
+   },
+   {
+    "name": "top_category",
+    "type": "string",
+    "description": "Top-level category, e.g. 'Storage furniture'."
+   },
+   {
+    "name": "category",
+    "type": "string",
+    "description": "Leaf category."
+   },
+   {
+    "name": "category_path",
+    "type": "string",
+    "description": "Category path from top level to leaf, separated by ' > '."
+   },
+   {
+    "name": "business_area",
+    "type": "string",
+    "description": "IKEA home furnishing business, e.g. 'Bedroom furniture'."
+   },
+   {
+    "name": "product_range_area",
+    "type": "string",
+    "description": "IKEA product range area, e.g. 'Chests & other furniture'."
+   },
+   {
+    "name": "product_area",
+    "type": "string",
+    "description": "IKEA product area, e.g. 'Chest of drawers'."
+   },
+   {
+    "name": "image_url",
+    "type": "string",
+    "description": "Main product image URL."
+   },
+   {
+    "name": "image_urls",
+    "type": "list of strings",
+    "description": "All product image URLs."
+   },
+   {
+    "name": "image_count",
+    "type": "integer",
+    "description": "Number of product images."
+   },
+   {
+    "name": "collected_at",
+    "type": "timestamp",
+    "description": "When this record was collected (UTC)."
+   }
+  ]
+ }
+}
